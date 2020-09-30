@@ -1,0 +1,36 @@
+nir.vaknin, batkiller
+Nir Vaknin (311514780), Ariel Batkilin (312247901)
+EX: 1
+
+FILES:
+osm.cpp -- Our osm implementation
+OS_ex1_graph.png -- Our graphs
+Makefile - Our makefile
+
+REMARKS:
+-
+
+ANSWERS:
+None
+
+Assignment 1:
+
+After downloading and running the program using strace, we noticed that we should give an argument as input.
+After running the program using strace with an argument we dicoverd that the program welcome us to the course and
+tells us to go and read the course guidelines now!!!
+("If you haven't read the course guidelines yet --- do it right now!")
+
+
+In more details,The program create a directory named "Welcome" (mkdir("Welcome", 0775) = 0),
+Then it make a sub-directory named "To" Then it creates a file called "OS2020" only for writing
+and returns its address(openat(AT_FDCWD, "Welcome/To/OS2020", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3).
+Then it opens the file and then write the following massage:
+---------------------------
+nir.vaknin
+If you haven't read the course guidelines yet --- do it right now!
+nir
+---------------------------
+afterwards the program closes the file, deletes the file, and deletes the sub-directory and directory
+called "To" ,"Welcome". after it does, it terminates.
+
+

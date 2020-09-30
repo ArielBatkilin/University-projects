@@ -1,0 +1,69 @@
+nir.vaknin, batkiller
+Nir Vaknin (311514780), Ariel Batkilin (312247901)
+EX: 3
+
+FILES:
+MapReduceFramework.cpp
+Makefile - Our makefile
+README
+
+REMARKS:
+-
+
+ANSWERS:
+Assignment Evaluation - FileWordCounter:
+As we can see, there is an improvement in terms of time that
+the threads do the job. But we can see that there is an overhead
+which can explain that there is not much difference between 16 threads and 100 threads.
+The job may done quicker as thread number goes up but so as the overhead.
+
+CPU information:
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+Address sizes:       39 bits physical, 48 bits virtual
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  1
+Core(s) per socket:  4
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               158
+Model name:          Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+Stepping:            9
+CPU MHz:             1132.760
+CPU max MHz:         3800.0000
+CPU min MHz:         800.0000
+BogoMIPS:            6816.00
+Virtualization:      VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            6144K
+NUMA node0 CPU(s):   0-3
+
+
+
+
+Assignment Part 2:
+
+Q1:
+We need to reach full utilization of the CPU so that we can run the program efficiently.
+In order to that we need to use all of the CPU's cores, so we need number of threads
+equals to it's number of cores.
+
+Q2:
+a) The number of lines that will be printed is equal to 2n.
+b) As we can see in the program, The Parent will wait until the child process will finish
+the program because of the line waitpid(pid,NULL,0); .
+After it finishes , that the parent will proceed to the barrier which he will prevent
+from other parents to continue their program. Therefore, All the children will finish
+first the program and afterwards the parents will be executed.
+So the number of options of the first n lines will be n! and so as the other n lines.
+for any line of the first n line we have an n! options so the total number of options
+is (n!)^2.
+
+
+
