@@ -1,0 +1,11 @@
+cpp_ex1
+batkiller
+312247901
+######
+
+In  this exrcise we touched the subject of rsa incription.
+I wrote to class one represents a field, and the other represents a
+nuber in the field. 
+the main thing we wanted to do is to represent a number with his 
+prime numbers ingridiants. For that we made 2 alghoritms, one of Rho, and
+one brouth force in case Rho fails.

@@ -1,0 +1,27 @@
+batkiller
+
+Ariel Batkilin
+312247901
+
+=============================
+= File description =
+=============================
+
+LinkedListWrapper.java - A wrapper for the linked lists i use in open hash sets
+SimpleHashSet.java - An abstract class for hash sets
+OpenHashSet.java - Class for open hashs sets
+ClosedHashSet.java - Class for closed hashs sets
+CollectionFacedeSet.java - Faced for general collections.
+
+
+=============================
+= Design =
+=============================
+1. I implemented the open hash set class using a wrapper for linked lists. In the class there is an array of linked lists,
+ all the strings that have the same clamp is going inside the linked list at the calmp place.
+ 
+2. At the closed hashing i delete strings by searching them first at my array(by the formula),
+and after removing them i put insted of them a special string. That special string helps me determine if a cell was
+ ocupid before, so i can continue searching when i look for some string.
+ 
+ 1. the open hash do bad job if every thing is going to one cell.

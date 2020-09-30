@@ -1,0 +1,16 @@
+cpp_ex2
+batkiller
+312247901
+######
+
+In this exercise we build a program that draws fractals.
+we practiced "the rule of 5", the "explicit", inharitance and 
+abstraction.
+For the oop i created a factory that creates the fractals for me.
+i have a parent abstract class "fractal" and the childes are the
+different kinds of fractals.
+the factory creates a pointer of fractal that points on my spcific 
+fractals. This pointers i put inside of a stack (because we want to print 
+in reverse order of getting them). 
+I made the move constructor and the move operator only for practicing 
+even it wasn't neccery in this exercise.

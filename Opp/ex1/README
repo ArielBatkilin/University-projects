@@ -1,0 +1,31 @@
+batkiller
+
+
+
+=============================
+=      File description     =
+=============================
+Book.java - implements the book class
+Patron.java - implements the Patron class.
+Library.java - implements the Library class
+
+
+
+=============================
+=          Design           =
+=============================
+For each book and patron that created i added an id.
+
+
+
+=============================
+=  Implementation details   =
+=============================
+in the library class i added an array so i can know how many books each patron took (they share the same 
+place)
+
+
+
+=============================
+=    Answers to questions   =
+=============================

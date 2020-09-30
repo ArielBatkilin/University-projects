@@ -1,0 +1,60 @@
+batkiller
+
+
+
+=============================
+=      File description     =
+=============================
+SpaceShip.java - this class is the base class for all the ships. the only two methods that the ships may override is the
+  "doAction" method, and the "getImage" method.
+SpaceShipAggressive.java - the aggressive spaceship class that extends the regular SpaceShip class
+SpaceShipBasher.java -  the basher spaceship class that extends the regular SpaceShip class
+SpaceShipDrunkard.java - the drunk spaceship class that extends the regular SpaceShip class
+SpaceShipFactory.java - the class that constract the ships
+SpaceShipHuman.java -  the human spaceship class that extends the regular SpaceShip class
+SpaceShipRunner.java - the runner spaceship class that extends the regular SpaceShip class
+SpaceShipSpaciel.java - the spacial spaceship class that extends the regular SpaceShip class
+
+=============================
+=          Design           =
+=============================
+I chose to disign of a basic class for space ships that implements almost all of 
+the spaceships functions, and the specific spaceships are extending this class and 
+basicly override only the do action method (exept the human spaceships that also override
+the getImage method). i chose that disign because i notice that praticly all the methods
+are similliar to all the space ships, except the do action method. the onlyt thing that left to do
+is to override that method and that what makes the difference bitween the spaceships.
+I also built a classes for the health, and the energy, and made instances of those classes as
+the ships data members. i decided to do that because there are alot of rols in the health and the energy
+and that means alot of methods that if i made them in the spaceships class, it would have made the class
+not with only one porpose.
+it's very easy to create new types of spaceships because all left to do is to implement a new
+doAction method. 
+all the behavior of the ships is done with constants that can be easely changed.
+
+so we have the game (instance of ShipWars)
+the game sends the arguments of what ships to create to the ships factory.
+the ships factory constract the ships and return them to the game.
+each ship has hp (health instance), mp (energy instance), her phisycs (SpaceShipPhysics instance),
+an indicator if the shield is activated and the shot timer.
+the other ships is only emplemnting diferently the doAction method.
+
+
+=============================
+=  Implementation details   =
+=============================
+drunk ship - the ship has a pilot that's brave deep down but has turned to alcohol lately,
+ so nowadays you'll find him drunk most of the time. Every time he teleports you may notice he'll
+ sober up for a while. While he's drunk he has little control over his ship and he'll fly quite randomly.
+ But make no mistake, even if he's drunk, if he aims his gun at you- he won't hesitate to fire.
+ 
+ 
+Special Ship - We're talking about the elite fighters of the galaxy, and they'll do anything to defend
+ their homeland. With the top most technology available for them, they're able to double their amount of energy.
+ They'll shoot at you non-stop, and collide into you, with their activated shields, in a deadly manner.
+ If you ran into one of these ships, I hope you left a letter for you loved ones, because your chances of escape are slim.
+
+=============================
+=    Answers to questions   =
+=============================
+

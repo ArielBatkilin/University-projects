@@ -1,0 +1,30 @@
+batkiller
+
+Ariel Batkilin
+312247901
+
+=============================
+= File description =
+=============================
+
+filter packege - a factory of filters, interface of filters, and alot of filters
+orders packege - a factory of orders, interface of orders, and some kinds of orders
+parser - class for parsing the command file
+type one exeptions - class for representing type one errors
+type two exeptions - class for representing type two errors
+section - section made from filter, order and number of error if ther were
+Directory Processor - the main class that runs the program
+
+
+=============================
+= Design =
+=============================
+1. i decided to build an interface for all the filters and orders that contain a function that relevant for them, then i made a factory of
+	each one of them, the main func using the parser to create an array of sections, each section contain filter, order and the error if ocured 
+	in that section. 
+	
+2. If i had an exeption during the creating of the filters or the order i took the exeption up till the parser, in the parser i 
+	could add the line number of the exception to the section and create a default filter or or order.
+	type two exeption handeld at the main func.
+	
+3. i build the orders as comperators. each order is a comepator object and with that i can sort easyly.

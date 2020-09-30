@@ -1,0 +1,10 @@
+cpp_ex3
+batkiller
+312247901
+######
+
+In this exercise we implemented the hash map utility and the spam detector class.
+the spam detector class gets a list of spam word, a msg, and a thershold 
+and print if the massege is a spam.
+the hash map is constructed using templates.
+it holds a list of vectors(as buckets) each bucket holds pairs of key and value.
